@@ -2,8 +2,8 @@ export default async function handler(req, res) {
 
   const { license, account } = req.query;
 
-  const SUPABASE_URL = "TU_SUPABASE_URL";
-  const SUPABASE_KEY = "TU_CLAVE_PUBLICABLE";
+  const SUPABASE_URL = "https://cvscvxcqnrynupyfiulc.supabase.co";
+  const SUPABASE_KEY = "sb_publishable_jNqS_nKeVBYst3salH4cgA_8jChCNlX";
 
   const response = await fetch(
     `${SUPABASE_URL}/rest/v1/licenses?license_key=eq.${license}`,
